@@ -1,0 +1,122 @@
+/*.row [class^=col-]{
+    background-color: rgba(86,61,124,.15);
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+input.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+input.ng-valid.ng-touched {
+    background-color: #78FA89;
+}
+
+textarea.ng-invalid.ng-touched {
+    background-color: #FA787E;
+}
+
+textarea.ng-valid.ng-touched {
+    background-color: #78FA89;
+}*/
+
+body,
+html {
+	margin:0;
+	padding:0;
+	color:#000;
+}
+
+hr {
+	margin: 5px 0px;
+	border-top: 1px solid #4C4D4D;
+}
+
+#container1 {
+	float: left;
+	width: 100%;
+	position: relative;
+	right: 50%;
+	background-color: rgba(185, 202, 202, 1);
+}
+
+#container2 {
+	clear: left;
+	float: left;
+	width: 100%;
+	background-color: rgb(152, 177, 207);
+}
+
+.left {
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 50%;
+}
+
+.right {
+	float: left;
+	width: 50%;
+	position: relative;
+	left: 50%;
+}
+
+.new-message-form {
+	text-align: center;
+	margin-top: 30%;
+	margin-right: 20px;
+}
+
+.error {
+	color: red;
+}
+
+
+/* Message form style */
+.new-message-form > input[type="text"] {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+	width: 325px;
+}
+
+.new-message-form > input[type="text"]:focus,
+.new-message-form > input[type="text"].focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+.new-message-form > textarea {
+	margin-bottom: 5px;
+	padding: 10px;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+	width: 325px;
+	height: 180px;
+}
+
+.new-message-form > textarea:focus,
+.new-message-form > textarea.focus {
+	border: solid 1px #707070;
+	box-shadow: 0 0 5px 1px #969696;
+}
+
+
+
+
+/* Messages styles */
+.message-form {
+	margin-bottom: 25px;
+}
+
+.message-list {
+	margin: 10px 15px;
+	font-family: "Comic Sans MS";
+}
+
+.message-date {
+	float: right;
+}

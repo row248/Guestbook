@@ -1,0 +1,31 @@
+<div id="container2">
+  <div id="container1">
+    <div class="left">
+      <form action="#/messages" method="post" class="new-message-form" name="newMessage">
+        <input type="text" placeholder="Имя" ng-model="message.username" required name="username"><br />
+        <div role="alert">
+          <span class="error" ng-show="newMessage.username.$error.required && newMessage.username.$touched">Введите имя!</span>
+        </div>
+        <textarea ng-model="message.message" placeholder="Сообщение" required name="message"></textarea><br />
+        <div role="alert">
+          <span class="error" ng-show="newMessage.message.$error.required && newMessage.message.$touched">Введите сообщение!</span>
+        </div>
+        <input type="button" ng-click="addAction()" value="{{idMessage | insertOrUpdate}}" class="btn btn-primary">
+        <input type="button" ng-click="resetForm()" value="Очистить"  class="btn btn-primary">
+      </form>
+    </div>
+    <div class="right">
+      <div class="message-list">
+        <div class="message-form" ng-repeat="msg in messages">
+          <span class="message-username" id="{{msg.id}}">{{msg.username}}</span>
+          <span class="message-date">{{msg.created_at}}</span>
+          <hr />
+          <div class="message">{{msg.message}}</span>
+          <br />
+          <a href="" ng-click="editPost(msg.id)">Редактировать</a>
+          <a href="" ng-click="deletePost(msg.id)">Удалить</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  

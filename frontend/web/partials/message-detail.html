@@ -1,0 +1,5 @@
+<form action="#/messages" method="post">
+	<input type="text" value="{{message.username}}" ng-model="message.username"><br />
+	<textarea ng-model="message.message">{{message.message}}</textarea><br />
+	<input type="button" ng-click="updateAction()" value="update">
+</form>
